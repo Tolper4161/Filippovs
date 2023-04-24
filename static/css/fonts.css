@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Inknut Antiqua'; 
+	src: url(../fonts/InknutAntiqua.ttf); 
+}
+@font-face {
+    font-family: 'Freehand';
+    src: url(../fonts/Freehand.ttf);
+}
+@font-face {
+    font-family: 'HighTowerText';
+    src: url(../fonts/HighTowerText.ttf);
+}
+@font-face {
+    font-family: 'ImprintMTShadow';
+    src: url(../fonts/ImprintMTShadow.ttf);
+}

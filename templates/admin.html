@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <title>Filippov`s — baking with a soul</title>
+</head>
+<body>
+    <div id="admin">
+        <div class="title-block">
+            <p class="line-big black-color title-top-p">
+                <img class="title" src="../static/img/logo-black.png" alt="">
+            </p>
+            <p class="line-min black-color title-bottom-p">baking with a soul</p>
+        </div>
+        <div class="container">
+            <nav id="admin-navbar">
+                <button class="red-bg" id="add-product">add product</button>
+            </nav>
+            <div class="admin-content">
+                {% for product in products %}
+                    <div class="admin-product-line">
+                        <h4 class="admin-product-title ImprintMTShadow">{{ product.name }}</h4>
+                        <div class="admin-product-line-right">
+                            <div class="admin-product-line-price ImprintMTShadow white-color red-bg">{{ product.price }}rub.</div>
+                            <button class="green-bg">customize</button>
+                            <a class="blue-bg white-color ImprintMTShadow" href="admin/delete/{{ product.id }}">delete</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div id="admin-adding-panel" class="unactive">
+        <div class="admin-adding-panel-block-content">
+            <div class="admin-adding-panel-block">
+                <button id="admin-adding-panel-close-btn" class="red-bg">x</button>
+                <form action="" method="post" class="admin-adding-panel-form" enctype="multipart/form-data">
+                    <h2 class="Freehand">New Product</h2>
+                    {{ form.name(class="red-bg white-color") }}<br>
+                    {% for error in form.name.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                    {{ form.price(class="red-bg white-color") }}<br>
+                    {% for error in form.price.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                    {{ form.discription(class="red-bg white-color") }}<br>
+                    {% for error in form.discription.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                    {{ form.tags(class="red-bg white-color") }}<br>
+                    {% for error in form.tags.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                    <label id="check-form-file-btn" class="input-file red-bg white-color">
+                        {{ form.picture(class="red-bg white-color") }}
+                        <span>Load photo</span>
+                    </label>
+                    {% for error in form.picture.errors %}
+                        <p class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </p>
+                    {% endfor %}
+                    <div class="admin-adding-panel-submit-block">
+                        {{ form.submit(type="submit", class="admin-adding-panel-submit red-bg white-color ImprintMTShadow", id="product-submit") }}
+                    </div>
+                    <div class="login-form-line"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/modal.js"></script>
+</body>
+</html>

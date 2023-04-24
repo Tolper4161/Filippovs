@@ -1,0 +1,543 @@
+@media(max-width: 1504px){
+    #header {
+        height: 600px;
+    }
+    .title-top-p .title {
+        max-height: 103px;
+    }
+    .title-bottom-p{
+        font-size: 45px;
+    }
+    .line-big::after {
+        top: 135px;
+        width: 350px;
+    }
+    .line-min::after {
+        top: 75px;
+        width: 300px;
+    }
+    .title-block .make-order {
+        margin-top: 40px;
+        padding: 3px 11px;
+    }
+    .title-block .make-order a {
+        font-size: 27px;
+    }
+    .contact-btn {
+        padding: 7px;
+    }
+}
+@media(max-width: 1491px){
+    .container {
+        padding: 0px 150px;
+    }
+    #footer .address::after {
+        width: 80%;
+    }
+}
+@media(max-width: 1429px){
+    .assort-block {
+        width: 200px;
+        height: 200px;
+    }
+    .assort-title {
+        font-size: 23px;
+    }
+    .assort-title::after {
+        width: 150px;
+    }
+}
+@media(max-width: 1370px){
+    .container {
+        padding: 0px 110px;
+    }
+}
+@media(max-width: 1281px){
+    .container {
+        padding: 0px 80px;
+    }
+}
+@media(max-width: 1253px){
+    #header {
+        height: 550px;
+    }
+    #header-nav a {
+        font-size: 14px;
+    }
+    .title-top-p .title {
+        max-height: 87px;
+        margin-bottom: 8px;
+    }
+    .title-bottom-p {
+        font-size: 38px;
+    }
+    .line-big::after {
+        top: 122px;
+        width: 295px;
+    }
+    .line-min::after {
+        top: 70px;
+        width: 232px;
+    }
+    .title-block .make-order {
+        margin-top: 40px;
+    }
+    .title-block .make-order a {
+        font-size: 23px;
+    }
+    .contact-btns {
+        bottom: 45px;
+    }
+    .contact-btn {
+        padding: 8px;
+    }
+    .contact-btn img {
+        max-height: 18px;
+    }
+    #footer .title-block .title-bottom-p {
+        margin-top: 7px;
+    } 
+    .footer-content {
+        display: flex;
+    }
+}
+@media(max-width: 1221px){
+    .product-title {
+        font-size: 24px;
+    }
+    .product {
+        width: 230px;
+        height: 360px;
+    }
+    .product-buy-btn {
+        padding: 5px 20px;
+        font-size: 19px;
+    }
+    .new-product-title {
+        padding-top: 30px;
+        padding-bottom: 35px;
+        font-size: 30px;
+    }
+    .new-product-title::after {
+        width: 185px;
+        height: 2.7px;
+        bottom: 31px;
+    }
+    #new-products {
+        padding-bottom: 60px;
+    }
+}
+@media(max-width: 1143px){
+    .assort-content {
+        width: 85%;
+    }
+}
+@media(max-width: 1117px){
+    .footer-content ul {
+        width: 19%;
+        margin-right: 18px;
+    }
+    #footer .address::after {
+        width: 100%;
+    }
+}
+@media(max-width: 1100px){
+    .product-title {
+        font-size: 20px;
+    }
+    .product {
+        width: 200px;
+        height: 310px;
+    }
+    .product-buy-btn {
+        padding: 4px 16px;
+        font-size: 16px;
+    }
+    .new-product-title {
+        font-size: 25px;
+    }
+    .new-product-title::after {
+        width: 152px;
+        height: 2.1px;
+    }
+    #new-products {
+        padding-bottom: 40px;
+    }
+}
+@media(max-width: 1058px){
+    .header-content {
+        width: 60%;
+    }
+}
+@media(max-width: 1000px){
+    .address-line:first-child{
+        line-height: 12px;
+    }
+    .top-account-content .container {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+}
+@media(max-width: 976px){
+    .container {
+        padding: 0px 40px;
+    }
+}
+@media(max-width: 970px){
+    #header {
+        height: 500px;
+    }
+    .header-shadow{
+        background: #00000024;
+    }
+    .header-content {
+        width: 65%;
+    }
+}
+@media(max-width: 967px) {
+    #footer .address::after {
+        width: 108%;
+    }
+}
+@media(max-width: 941px){
+    .assort-content {
+        width: 100%;
+    }
+}
+@media(max-width: 931px){
+    .top-account-left-column {
+        width: 530px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+    .account-left-column-top, .account-left-column-bottom {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    .account-left-column-bottom {
+        border-radius: 0px 10px 10px 0px;
+    }
+    .top-account-content .container {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 901px){
+    .product-title {
+        font-size: 17px;
+    }
+    .product {
+        width: 170px;
+        height: 268px;
+    }
+    .product-buy-btn {
+        padding: 3px 12px;
+        font-size: 14px;
+    }
+    #footer .line-big.title-top-p .title {
+        margin-bottom: 6px;
+    }
+}
+@media(max-width: 895px){
+    .title-top-p .title {
+        max-height: 80px;
+        margin-bottom: 11px;
+    }
+    #header-nav a {
+        font-size: 13px;
+    }
+    .title-bottom-p {
+        font-size: 35px;
+    }
+    .line-big::after {
+        top: 112px;
+        width: 272px;
+    }
+    .line-min::after {
+        top: 65px;
+        width: 213px;
+    }
+    .title-block .make-order {
+        margin-top: 40px;
+        padding: 2px 10px;
+    }
+    .title-block .make-order a {
+        font-size: 21px;
+    }
+    .contact-btn {
+        padding: 6px;
+        border: 2px solid white;
+    }
+    .contact-btn img {
+        max-height: 15px;
+    }
+    .logo {
+        max-height: 60px;
+    }
+}
+@media(max-width: 885px){
+    .footer-content ul a {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    .footer-content {
+        padding-bottom: 45px;
+    }
+    .footer-content ul h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    #footer .footer-shadow {
+        padding-top: 150px;
+    }
+    #footer .address {
+        top: -111px;
+    }
+    #footer .contact-btns .contact-btn {
+        padding: 5px;
+    }
+    #footer .contact-btns .contact-btn img {
+        max-width: 14px;
+    }
+    #footer .title-block .title-bottom-p {
+        font-size: 22px;
+    }
+    #footer .title-block .title {
+        max-height: 49px;
+    }
+    #footer .title-block .title-top-p.line-big::after {
+        top: 68px;
+        width: 175px;
+    }
+    #footer .title-block .title-bottom-p.line-min::after {
+        top: 42px;
+        width: 133px;
+    }
+}
+@media(max-width: 831px){
+    #header {
+        height: 450px;
+    }
+    .contact-btns {
+        bottom: 32px;
+    }
+}
+@media(max-width: 825px){
+    .header-content {
+        width: 70%;
+    }
+}
+@media(max-width: 800px){
+    #footer .address {
+        width: 21%;
+    }
+    .footer-content ul {
+        width: 25%;
+    }
+    .footer-shadow{
+        background: #00000033;
+    }
+    .assort-block {
+        width: 170px;
+        height: 170px;
+    }
+    .assort-title {
+        font-size: 20px;
+    }
+    .assort-title::after {
+        width: 125px;
+        bottom: -9px;
+    }
+    #assortment {
+        padding: 50px 0px;
+    }
+}
+@media(max-width: 781px){
+    .container {
+        padding: 10px;
+    }
+    .new-product-title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .new-product-title::after {
+        bottom: 18px;
+    }
+    .footer-shadow {
+        padding: 20px 0px;
+    }
+    .footer-content {
+        padding-bottom: 25px;
+    }
+    #footer .footer-shadow {
+        padding-top: 120px;
+    }
+    #footer .address {
+        width: 22%;
+        top: -84px;
+    }
+}
+@media(max-width: 765px){
+    .header-shadow {
+        background: #00000052;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .title-block {
+        width: 100%;
+    }
+}
+@media(max-width: 650px){
+    .logo {
+        max-height: 45px;
+    }
+}
+@media(max-width: 620px){
+    #footer .address {
+        width: 27%;
+        left: 20px;
+    }
+    .footer-content ul {
+        width: 33.33%;
+        margin: 0px 10px;
+    }
+    .logo {
+        display: none;
+    }
+    #top-account-nav {
+        padding-left: 0px;
+    }
+    .top-account-content .container {
+        padding-top: 10px;
+    }
+}
+@media(max-width: 551px){
+    .top-account-left-column {
+        width: 450px;
+    }
+    .top-account-right-column {
+        width: 450px;
+        height: 405px;
+    }
+    .top-account-right-column-content button {
+        margin-bottom: 3px;
+    }
+    #total, .top-account-right-column .admin-adding-panel-submit {
+        transform: translateY(0px);
+    }
+}
+@media(max-width: 521px){
+    #footer .footer-shadow .title-block {
+        display: none;
+    }
+    #assortment {
+        padding: 40px 0px;
+    }
+}
+@media (max-width: 491px){
+    .account-left-column-top, .account-left-column-bottom {
+        width: 100%;
+    }
+    .top-account-left-column {
+        width: 330px;
+    }
+    .account-left-column-top, .account-left-column-bottom {
+        height: 50%;
+    }
+    .top-account-left-column {
+        height: 440px;
+    }
+    .account-left-column-bottom {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .top-account-right-column {
+        width: 330px;
+    }
+    .top-account-right-column-content {
+        justify-content: space-around;
+    }
+    .top-account-right-column {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 481px){
+    .footer-content ul {
+        margin: 0px 5px;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-content ul {
+        width: 46%;
+    }
+    #footer .address {
+        width: 41%;
+        left: 15px;
+    }
+}
+@media(max-width: 461px){
+    .contact-btns{
+        width: 75%;
+    }
+}
+@media(max-width: 431px){
+    #assortment {
+        padding: 20px 0px;
+    }
+}
+@media(max-width: 421px){
+    #header-nav{
+        display: none;
+        padding: 0px;
+        transition: 0.5s;
+    }
+    #menu-bar{
+        display: inline-block;
+    }
+    #menu-account {
+        display: inline-block;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+}
+@media(max-width: 401px){
+    .contact-btns{
+        width: 85%;
+    }
+}
+@media(max-width: 361px){
+    .top-account-left-column, .top-account-right-column {
+        width: 290px;
+    }
+}
+@media(max-width: 351px){
+    #footer .address {
+        width: 91%;
+        left: 15px;
+    }
+    #footer .address::after {
+        width: 100%;
+    }
+    .footer-content ul {
+        width: 100%;
+    }
+}
+@media(max-width: 340px){
+    .assort-block {
+        width: 150px;
+        height: 150px;
+    }
+    .assort-title {
+        font-size: 17px;
+    }
+    .assort-title::after {
+        width: 120px;
+        bottom: -6px;
+    }
+}

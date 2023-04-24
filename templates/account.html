@@ -1,0 +1,51 @@
+{% extends "footer.html" %}
+{% block content %}
+<div id="account-content">
+    <nav id="top-account-nav">
+        <img src="../static/img/logo.png" alt="" class="logo">
+        <div class="header-content">
+            <button src="../static/img/menu-bar.png" id="menu-bar"></button>
+            <a class="line-hover white-color" href="/logout" id="menu-account">Exit</a>
+            <nav id="header-nav">
+                <a class="line-hover white-color" href="/index">Home</a>
+                    <a class="line-hover white-color" href="#">New Products</a>
+                    <a class="line-hover white-color" href="/shop">Assortment</a>
+                    <a class="line-hover white-color" href="#">Make an order</a>
+                <a class="line-hover white-color" href="/logout">Exit</a>
+            </nav>
+        </div>
+    </nav>
+    <div class="top-account-content">
+        <div class="container">
+            <div class="top-account-left-column">
+                <form action="" class="account-left-column-top">
+                    <h2 class="account-content-zag Freehand line-big">Make an Order</h2>
+                    <input type="text" placeholder="Your address" name="address" id="address-input">
+                    <div class="admin-adding-panel-submit-block">
+                        <input type="submit" value="make an order" class="admin-adding-panel-submit red-bg white-color ImprintMTShadow" id="address-submit">
+                    </div>
+                </form>
+                <form action="" class="account-left-column-bottom red-bg">
+                    <h2 class="account-content-zag Freehand white-color line-big">Enter Promo</h2>
+                    <input type="text" placeholder="Promocode" name="promo" id="promo-input">
+                    <div class="admin-adding-panel-submit-block">
+                        <input type="submit" value="enter" class="admin-adding-panel-submit red-bg white-color ImprintMTShadow" id="promo-submit">
+                    </div>
+                </form>
+            </div>
+            <div class="top-account-right-column">
+                <h2 class="account-content-zag Freehand line-big">Your Order</h2>
+                <div class="top-account-right-column-content">
+                    {% for position in cart %}
+                    <div class="button"><div class="button-content">{{ position[0] }}<br>{{ position[1] }}rub.<br></div><span class="big-text white-color ImprintMTShadow">{{ position[2] }}</span></div>
+                    {% endfor %}
+                </div>
+                <p id="total" class="Inknut Antiqua">Total: {{ total }}rub.</p>
+                <form action="" method="POST" class="admin-adding-panel-submit-block">
+                    <input class="admin-adding-panel-submit red-bg white-color ImprintMTShadow" id="clear-all" value="clear all" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

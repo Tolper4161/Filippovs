@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <title>Filippov`s — baking with a soul</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header-shadow">
+            <div class="header-content">
+                <button src="../static/img/menu-bar.png" id="menu-bar"></button>
+                <nav id="header-nav">
+                    <a class="line-hover white-color" href="/index">Home</a>
+                    <a class="line-hover white-color" href="#">New Products</a>
+                    <a class="line-hover white-color" href="/shop">Assortment</a>
+                    <a class="line-hover white-color" href="#">Make an order</a>
+                    {% if current_user.is_authenticated %}
+                        <a class="line-hover white-color" href="/account">{{ current_user.name }}</a>
+                    {% else %}
+                        <a class="user-profile-icon" href="/login"></a>
+                    {% endif %}
+                </nav>
+                <div class="title-block">
+                    <p class="line-big title-top-p">
+                        <img class="title" src="../static/img/logo.png" alt="">
+                    </p>
+                    <p class="line-min white-color title-bottom-p">baking with a soul</p>
+                    <div class="make-order-block">
+                        <button class="make-order"><a href="#">make an order</a></button>
+                    </div>
+                </div>
+                <div class="contact-btns">
+                    <button class="white-color contact-btn"><img src="../static/img/phone.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/whatsapp.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/vk.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/telegram.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer id="footer">
+        <div class="footer-shadow">
+            <div class="title-block">
+                <p class="line-big title-top-p">
+                    <img class="title" src="../static/img/logo.png" alt="">
+                </p>
+                <p class="line-min title-bottom-p white-color">baking with a soul</p>
+            </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="address">
+                        <p class="white-color address-line"><img src="../static/img/pin.png" alt="" class="icon">86 Lenin Street, Bataysk</p>
+                        <p class="white-color address-line"><img src="../static/img/phone.png" alt="" class="icon">+7 (777) 777-77-77</p>
+                        <p class="white-color address-line"><img src="../static/img/gmail.png" alt="" class="icon">fillipovs@email.com</p>
+                    </div>
+                    <ul>
+                        <h3>Menu</h3>
+                        <a>About us</a>
+                        <a>New Products</a>
+                        <a>Our establishments</a>
+                        <a>Contact us</a>
+                    </ul>
+                    <ul>
+                        <h3>Production</h3>
+                        <a>Yeast dough</a>
+                        <a>Butter dough</a>
+                        <a>Puff pastry</a>
+                        <a>With fillings</a>
+                    </ul>
+                    <ul>
+                        <h3>Lorem</h3>
+                        <a>Ipsum folot</a>
+                        <a>Dolor sit amet</a>
+                        <a>Consectetur adipiscing</a>
+                        <a>Sed do eiusmod</a>
+                    </ul>
+                </div>
+                <div class="contact-btns">
+                    <button class="white-color contact-btn"><img src="../static/img/phone.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/whatsapp.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/vk.png" alt=""></button>
+                    <button class="white-color contact-btn"><img src="../static/img/telegram.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="../static/js/navbar.js"></script>
+<script src="../static/js/modal.js"></script>
+<script src="../static/js/shop.js"></script>
+</body>
+</html>

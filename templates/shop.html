@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="shop-assortment">
+        <div class="container">
+            <div class="product-content">
+                {% for product in products %}
+                    <div class="product" onclick="showProduct('product-window-{{ loop.index }}')"><!-- product.name, product.picture, product.price, product.discription, product.tags -->
+                        <h4 class="product-title ImprintMTShadow">{{ product.name }}</h4>
+                        <img src="../static/img/products/{{ product.picture }}" alt="" class="product-img">
+                        <div class="product-button-block">
+                            <button class="product-buy-btn">{{ product.price }}rub.</button>
+                        </div>
+                    </div>
+                    <div id="product-window-{{ loop.index }}" class="product-window unactive">
+                        <div class="product-window-block">
+                            <button id="admin-adding-panel-close-btn" class="red-bg" onclick="showProduct('product-window-{{ loop.index }}')">x</button>
+                            <div class="product-window-block-panel">
+                                <h2 class="product-window-title">{{ product.name }}</h2>
+                                <div class="product-window-content">
+                                    <img src="../static/img/products/{{ product.picture }}" alt="" class="product-window-img">
+                                    <p class="product-window-text">{{ product.discription }}</p>
+                                    <p class="product-window-tags">{{ product.tags }}</p>
+                                </div>
+                                <form action="" method="post">
+                                    {{ form.id(type="hidden", value=product.id) }}<br>
+                                    {% for error in form.count.errors %}
+                                        <p class="alert alert-danger" role="alert">
+                                            {{ error }}
+                                        </p>
+                                    {% endfor %}
+                                    {{ form.count(type="number", value="1", class="product-count white-color red-bg", min="1", max="50") }}<br>
+                                    {% for error in form.count.errors %}
+                                        <p class="alert alert-danger" role="alert">
+                                            {{ error }}
+                                        </p>
+                                    {% endfor %}
+                                    <div class="product-button-block">
+                                    {% if current_user.is_authenticated %}
+                                        {{ form.submit(type="submit", value=product.price, class="product-buy-btn product-window-buy-btn ImprintMTShadow") }}<br>
+                                        {% for error in form.submit.errors %}
+                                            <p class="alert alert-danger" role="alert">
+                                                {{ error }}
+                                            </p>
+                                        {% endfor %}
+                                    {% else %}
+                                        <a class="product-buy-btn product-window-buy-btn ImprintMTShadow" href="login">{{ product.price }}rub.</a>
+                                    {% endif %}
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
